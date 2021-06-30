@@ -1,20 +1,21 @@
 {
-    "proxychain": [
-        {
-            "name": "varnish",
-            "image": "varnish:6.3.1"
-        }
-    ],
-    "environments": {
-        "Production": {
-            "origin": {
-                "address": "45.55.156.110"
-            }
-        },
-        "Development": {
-            "origin": {
-                "address": "45.55.156.110"
-            }
-        }
+  "proxychain": [
+    {
+      "name": "myNodeApp",
+      "image": "nodejs:14.10.0"
     }
+  ],
+  "environments": {
+    "Production": {
+      "origin": {
+        "address": "www.section.io"
+      },
+      "ip_blacklist": ["128.12.1.2", "119.1.3.4", "119.1.3.7"]
+    },
+    "Development": {
+      "origin": {
+        "address": "www.section.io"
+      }
+    }
+  }
 }

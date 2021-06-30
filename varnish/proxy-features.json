@@ -1,5 +1,0 @@
-{
-    "parameter/pipe_timeout": 125,
-    "parameter/http_max_hdr": 128,
-    "statics-enable-caching": "6h"
-}
